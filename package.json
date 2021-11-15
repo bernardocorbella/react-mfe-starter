@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "\"git@github.com:bernardocorbella/react-mfe-starter.git\"",
   "author": "Bernardo Corbella <corbellabernardo@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.64.1"
+  }
 }
