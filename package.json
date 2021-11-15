@@ -6,8 +6,37 @@
   "repository": "\"git@github.com:bernardocorbella/react-mfe-starter.git\"",
   "author": "Bernardo Corbella <corbellabernardo@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:start": "cd dist && PORT=3000 npx serve",
+    "start": "webpack serve --mode development",
+    "start:live": "webpack serve --mode development --live-reload --hot",
+    "test": "jest"
+  },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.0.2",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
-    "webpack": "^5.64.1"
+    "jest": "^27.3.1",
+    "postcss": "^8.3.11",
+    "postcss-loader": "^6.2.0",
+    "serve": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
